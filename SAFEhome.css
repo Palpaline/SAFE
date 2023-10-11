@@ -1,79 +1,89 @@
-header {
-    width: 100%;
-    height: 100%; 
-    background: linear-gradient(90deg, #240128 0%, rgba(36, 1, 40, 0.79) 100%);
+@font-face {
+    font-family: "open sans";
+    src: url(Images/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+@font-face {
+    font-family: "alex brush";
+    src: url(Images/AlexBrush-Regular.ttf);
 }
 
-/*Reset CSS*/
 *{
-    margin: 0px;
-    padding: 0px;
-    font-family: Avenir, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-nav{
+
+header {
+    display:flex;
+    justify-content: space-between;
+    height: 150px;
     width: 100%;
-    margin: 0 auto;
-    background-color: white;
-    position: sticky;
-    top: 0px;
+    background: rgb(37,3,41);
+    background: linear-gradient(92deg, rgba(37,3,41,1) 0%, rgba(80,53,84,1) 100%, rgba(150,76,244,1) 100%);
+    padding: 5px;
 }
 
-nav ul{
-    list-style-type: none;
+.logo-safe{
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
 }
 
-nav ul li{
-    float: left;
-    width: 25%;
-    text-align: center;
-    position: relative;
+.logo-safe h1{
+    font-family: "open sans";
+    font-size: 400%;
+    font-weight:bolder;
+    color: white;
 }
 
+.logo-safe img{
+    width:150px
+}
 
-nav a{
-    display: block;
-    text-decoration: none;
+.left-items-header{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+}
+
+.left-items-header h3{
+    margin: 3px;
+    font-family: "alex brush";
+    font-size: 225%;
+    font-weight: lighter;
+    color: white;
+}
+
+.right-items-header{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items:center;
+    justify-content: flex-end;
+    width: 70%;
+}
+
+.right-items-header-1{
+    margin-right: 400px;
+    display: flex;
+    align-items: center;
+}
+.right-items-header-2{
+    margin-right: 80px;
+}
+.right-items-header-1 img, .right-items-header-2 img {
+    margin: 10px;
+    width: 40px;
+}
+
+#search{
+    width: 350px;
+    height: 30px;
+    border-radius: 20px;
+    border:0;
+    background:rgba(250, 235, 215, 0.5);
     color: black;
-    border-bottom: 2px solid transparent;
-    padding: 10px 0px;
-}
-
-nav a:hover{
-    color: orange;
-    border-bottom: 2px solid gold;
-}
-
-.sous{
-    display: none;
-    box-shadow: 0px 1px 2px #CCC;
-    background-color: white;
-    position: absolute;
-    width: 100%;
-    z-index: 1000;
-}
-nav > ul li:hover .sous{
-    display: block;
-}
-.sous li{
-    float: none;
-    width: 100%;
-    text-align: center;
-}
-.sous a{
-    padding: 10px;
-    border-bottom: none;
-}
-.sous a:hover{
-    border-bottom: none;
-    background-color: RGBa(200,200,200,0.1);
-}
-.deroulant > a::after{
-    content:" ▼";
-    font-size: 12px;
-}
-
-.conteneur{
-  margin: 50px 20px;
-  height: 1500px;
+   
 }
