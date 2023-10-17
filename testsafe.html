@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="testsafe.css">
+</head>
+
+<body>
+    <header>
+    </header>
+    <!-- recherche et trie        -->
+    <main>
+        <div class="ariane">
+            <ul>
+                <li><a href="#">Accueil</a> </li>
+                <li><a href="#">Alcools</a> </li>
+            </ul>
+            <div id="trait_dessus">
+                  <hr>
+                <h1> Vins/Champagnes</h1>
+            </div>
+        </div>
+        <div> <select class="tri" aria-label="small tri"></div>
+        <option selected="Trier par : ">Trier par :</option>
+        <option value="1">Prix: Ordre Croissant</option>
+        <option value="2">Prix: Ordre Décroissant</option>
+        <option value="3">En Stock</option>
+        <option value="4">Dernières arrivées</option>
+        </select>
+
+        </div>
+
+
+        <!-- carte produit vin  -->
+        <!-- bouteille  -->
+        <section class="card-wine">
+            <div class="vin-bg">
+                <img id="bouteille" class="vin" src="Images/La-Croix-DArdit-2019.png" alt="croix d'ardet" height="100"
+                    width="">
+            </div>
+            <!-- titre et prix  -->
+            <p class="titre">Bordeaux</p>
+            <p class="paratitre">Croix d'Ardet 75cl</p>
+            <p class="prix">12€90 TTC</p>
+            <!-- bouton  -->
+            <div id="input_div">
+                <img src="Images/moins.png" id="moins" onclick="minus()" width="25">
+
+                <input type="text" size="1" value="0" id="count">
+                <img src="Images/ajouter.png" value="+" id="plus" onclick="plus()" width="30">
+                <img src="Images/champagne.png" id="panier" onclick="panier()" width="25">
+
+                <script>
+                    var count = 0;
+                    var countEl = document.getElementById("count");
+                    function plus() {
+                        count++;
+                        countEl.value = count;
+                    }
+                    function minus() {
+                        if (count > 1) {
+                            count--;
+                            countEl.value = count;
+                        }
+                    }
+                    function panier() {
+                        alert("article(s) ajoutée(s)")
+                    }
+                </script>
+            </div>
+        </section>
+
+
+    </main>
+
+</body>
+
+</html>
