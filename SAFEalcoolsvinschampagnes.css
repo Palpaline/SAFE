@@ -6,22 +6,110 @@
 main {
     background-image: url(Images/concept-tourisme-vacances-man-drinking-wine-from-bottle-on-holiday-standing-against-yellow-ba\ \(1\).png);
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
     color: white;
-    height: 800px;
-    overflow:visible
+    height: 850px;
+    overflow: visible;
 }
 
-/* banniére */
+/* banniere */
+
+@font-face {
+    font-family: "open sans";
+    src: url(Images/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+
+@font-face {
+    font-family: "alex brush";
+    src: url(Images/AlexBrush-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
 header {
+    display: flex;
+    justify-content: space-between;
     height: 150px;
     width: 100%;
     background: rgb(37, 3, 41);
     background: linear-gradient(92deg, rgba(37, 3, 41, 1) 0%, rgba(80, 53, 84, 1) 100%, rgba(150, 76, 244, 1) 100%);
+    padding: 5px;
 }
 
-body {
-    background: beige;
+.logo-safe {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logo-safe h1 {
+    font-family: "open sans";
+    font-size: 400%;
+    font-weight: bolder;
+    color: white;
+    margin-right: 200px;
+}
+
+.logo-safe img {
+    width: 135px;
+}
+
+.left-items-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+
+}
+
+.left-items-header h3 {
+    display: flex;
+    margin: 3px;
+    font-family: "alex brush";
+    font-size: 220%;
+    font-weight: lighter;
+    color: white;
+    margin-right: 150px;
+}
+
+.right-items-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    justify-content: flex-end;
+    width: 70%;
+}
+
+.right-items-header-1 {
+    margin-right: 400px;
+    display: flex;
+    align-items: center;
+}
+
+.right-items-header-2 {
+    margin-right: 80px;
+}
+
+.right-items-header-1 img,
+.right-items-header-2 img {
+    margin: 10px;
+    width: 40px;
+}
+
+#search {
+    width: 350px;
+    height: 30px;
+    border-radius: 20px;
+    border: 0;
+    background: rgba(250, 235, 215, 0.5);
+    color: black;
+
 }
 
 /* rectalgne transparant  */
@@ -80,7 +168,7 @@ p {
     font-weight: bolder;
 }
 
-h1{
+h1 {
     font-family: "OpenSans";
     font-size: 50px;
     color: black;
@@ -102,7 +190,7 @@ h1{
 
 /* bouton  */
 
-#count {
+.count {
     background-color: none;
     width: 25px;
     height: 25px;
@@ -110,28 +198,16 @@ h1{
     font-size: 15px;
     text-indent: 8px;
     border: px black;
-    
+
     margin-left: 3px;
 }
 
-#moins {
+.moins,
+.plus,
+.panier {
     padding: 2px;
     color: black;
     font-size: x-large
-}
-
-#plus {
-    padding: 2px;
-    color: black;
-    font-size: x-large;
-
-}
-
-#panier {
-    padding: 2px;
-    color: black;
-    font-size: x-large;
-
 }
 
 #input_div {
@@ -141,11 +217,11 @@ h1{
     margin-top: 5px;
 }
 
-.Tri{
+.Tri {
     margin-top: 70px;
 }
 
-.ariane{
+.ariane {
     height: 150px;
     width: 100%;
 
@@ -154,132 +230,55 @@ h1{
 /* fil d'ariane  */
 .ariane {
     padding: 0 .5rem;
-  }
-  
-  .ariane ul {
+}
+
+.ariane ul {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
     margin: 0;
     padding: 25px;
-  }
+}
 
-  .ariane li:not(:last-child)::after {
+.ariane li:not(:last-child)::after {
     display: inline-block;
     margin: 0 .25rem;
     content: ">";
-  }
-
-  #trait_dessus
-{
-border-top: 1px solid #f1aa25;
-width : 100%;
-} 
-
-.tri{
-	position:relative;
 }
 
-/* banniere */
-
-@font-face {
-    font-family: "open sans";
-    src: url(Images/OpenSans-VariableFont_wdth\,wght.ttf);
-}
-@font-face {
-    font-family: "alex brush";
-    src: url(Images/AlexBrush-Regular.ttf);
-}
-
-*{
-    margin: 0;
-    padding: 0;
-}
-
-
-header {
-    display:flex;
-    justify-content: space-between;
-    height: 150px;
+#trait_dessus {
+    border-top: 1px solid #f1aa25;
     width: 100%;
-    background: rgb(37,3,41);
-    background: linear-gradient(92deg, rgba(37,3,41,1) 0%, rgba(80,53,84,1) 100%, rgba(150,76,244,1) 100%);
-    padding: 5px;
 }
 
-.logo-safe{
-    display:flex;
-    justify-content:flex-start;
-    align-items:center;
+.tri {
+    position: relative;
 }
 
-.logo-safe h1{
-    font-family: "open sans";
-    font-size: 400%;
-    font-weight:bolder;
-    color: white;
-    margin-right: 200px;
-}
-
-.logo-safe img{
-    width:135px;
-}
-
-.left-items-header{
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 30%;
-    
-}
-
-.left-items-header h3{
-    display: flex;
-    margin: 3px;
-    font-family: "alex brush";
-    font-size: 220%;
-    font-weight: lighter;
-    color: white;
-    margin-right: 150px;
-}
-
-.right-items-header{
-    display:flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items:center;
-    justify-content: flex-end;
-    width: 70%;
-}
-
-.right-items-header-1{
-    margin-right: 400px;
-    display: flex;
-    align-items: center;
-}
-.right-items-header-2{
-    margin-right: 80px;
-}
-.right-items-header-1 img, .right-items-header-2 img {
-    margin: 10px;
-    width: 40px;
-}
-
-#search{
-    width: 350px;
-    height: 30px;
-    border-radius: 20px;
-    border:0;
-    background:rgba(250, 235, 215, 0.5);
-    color: black;
-   
-}
-
-.les-vins{
+.les-vins {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     padding: 0 4rem;
 }
 
+a {
+    text-decoration: none;
+}
+
+div p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* banniére fin  */
+
+.sousbanniere{
+
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+    align-items: center;
+
+}

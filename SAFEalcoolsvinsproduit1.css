@@ -9,45 +9,28 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
-    height: 720px;
+    height: 850px;
+    overflow: visible;
 }
 
-/* banniére */
 
-body {
-    background: beige;
+/* banniere  */
+
+@font-face {
+    font-family: "open sans";
+    src: url(Images/OpenSans-VariableFont_wdth\,wght.ttf);
 }
 
-/* fil d'ariane  */
-.ariane {
-    padding: 0 .5rem;
+@font-face {
+    font-family: "alex brush";
+    src: url(Images/AlexBrush-Regular.ttf);
 }
 
-.ariane ul {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
+* {
     margin: 0;
-    padding: 25px;
+    padding: 0;
 }
 
-.ariane li:not(:last-child)::after {
-    display: inline-block;
-    margin: 0 .25rem;
-    content: ">";
-}
-
-#trait_dessus {
-    border-top: 1px solid #f1aa25;
-    width: 100%;
-}
-
-
-.ariane {
-    height: 150px;
-    width: 100%;
-
-}
 
 header {
     display: flex;
@@ -131,20 +114,43 @@ header {
 
 }
 
-@font-face {
-    font-family: "open sans";
-    src: url(Images/OpenSans-VariableFont_wdth\,wght.ttf);
+/* ombrage  */
+#bouteille {
+
+    filter: drop-shadow(5px 5px 4px rgba(0, 0, 0, 0.590));
 }
 
-@font-face {
-    font-family: "alex brush";
-    src: url(Images/AlexBrush-Regular.ttf);
+/* fil d'ariane  */
+.ariane {
+    padding: 0 .5rem;
 }
 
-* {
+.ariane ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 25px;
 }
+
+.ariane li:not(:last-child)::after {
+    display: inline-block;
+    margin: 0 .25rem;
+    content: ">";
+}
+
+#trait_dessus {
+    border-top: 1px solid #f1aa25;
+    width: 100%;
+}
+
+
+/* .ariane {
+    height: 150px;
+    width: 100%;
+
+} */
+
 
 /* rectalgne transparant  */
 .produits {
@@ -188,13 +194,31 @@ header {
 .info {
     background: rgb(180, 172, 195);
     background: linear-gradient(180deg, rgba(180, 172, 195, 1) 0%, rgba(70, 37, 132, 0) 100%);
-    width: 350px;
-    height: 500px;
+    width: 600px;
+    height: 450px;
     padding: 30px 20px;
     border: 4px;
     display: flex;
+    border-radius: 10%;
     flex-direction: column;
     align-items: center;
     margin-left: 150px;
     margin-top: 50px;
+    filter: drop-shadow(6px 6px 4px rgba(0, 0, 0, 0.600));
+}
+
+.contact,
+.nous,
+.ethanol {
+    display: flex;
+    justify-content: space-around;
+align-items:flex-end ;
+float:left;
+    margin-left: 10%;
+    margin-top: 107px;
+    
+}
+
+.info h1{
+    
 }

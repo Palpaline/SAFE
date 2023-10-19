@@ -76,10 +76,10 @@ const vins = [
 
 const lesVins = document.querySelector(".les-vins");
 
-vins.map(vin => {
+vins.map((vin, index) => {
     const cardWine = document.createElement("section");
     cardWine.classList.add("card-wine");
-    cardWine.innerHTML = `<div class="vin-bg">
+    cardWine.innerHTML = `<a href="SAFEalcoolsvinsproduit1.html"><div class="vin-bg">
 <img id="bouteille" class="vin" src=${vin.image} alt="croix d'ardet" height="100"
     width="">
 </div>
@@ -87,35 +87,50 @@ vins.map(vin => {
 <p class="titre">${vin.titre}</p>
 <p class="paratitre">${vin.titre2}</p>
 <p class="prix">${vin.prix}</p>
+</a>
 <!-- bouton  -->
 <div id="input_div">
-<img src="Images/moins.png" id="moins" onclick="minus()" width="25">
+<img src="Images/moins.png" class="moins" width="25">
 
-<input type="text" size="1" value="0" id="count">
-<img src="Images/ajouter.png" value="+" id="plus" onclick="plus()" width="30">
-<img src="Images/champagne.png" id="panier" onclick="panier()" width="25">
+<input type="text" size="1" value="0" class="count">
+<img src="Images/ajouter.png" value="+" class="plus" width="30">
+<img src="Images/champagne.png" class="panier" width="25">
 
 
 </div>`
-lesVins.appendChild(cardWine);
+    lesVins.appendChild(cardWine);
+    console.log(index);
+    var count = 0;
+    var countEl = document.getElementsByClassName("count");
+    var moinsEl = document.getElementsByClassName("moins");
+    var plusEl = document.getElementsByClassName("plus");
+    var panierEl = document.getElementsByClassName("panier");
+    console.log(countEl);
+
+    moinsEl[index].addEventListener("click", minus);
+    plusEl[index].addEventListener("click", plus);
+    panierEl[index].addEventListener("click", panier);
+
+    function plus() {
+        count++;
+        countEl[index].value = count;
+    }
+    function minus() {
+        if (count > 0) {
+            count--;
+            countEl[index].value = count;
+        }
+    }
+    function panier() {
+        alert(count + "x " + vin.titre + " " + vin.titre2 + " ajouté(s) au panier");
+        count = 0;
+        countEl[index].value = count;
+    }
+
 })
 
 
-var count = 0;
-var countEl = document.getElementById("count");
-function plus() {
-    count++;
-    countEl.value = count;
-}
-function minus() {
-    if (count > 1) {
-        count--;
-        countEl.value = count;
-    }
-}
-function panier() {
-    alert("article(s) ajoutée(s)")
-}
+
 
 
 
