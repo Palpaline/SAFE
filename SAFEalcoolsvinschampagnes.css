@@ -1,15 +1,15 @@
 * {
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
 }
 
 main {
     background-image: url(Images/concept-tourisme-vacances-man-drinking-wine-from-bottle-on-holiday-standing-against-yellow-ba\ \(1\).png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:cover;
     color: white;
-    height: 720px;
+    height: 800px;
+    overflow:visible
 }
 
 /* banniére */
@@ -33,7 +33,8 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left:  150px;
+    margin: 0 20px;
+
 }
 
 /* ombrage  */
@@ -178,3 +179,107 @@ width : 100%;
 .tri{
 	position:relative;
 }
+
+/* banniere */
+
+@font-face {
+    font-family: "open sans";
+    src: url(Images/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+@font-face {
+    font-family: "alex brush";
+    src: url(Images/AlexBrush-Regular.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    display:flex;
+    justify-content: space-between;
+    height: 150px;
+    width: 100%;
+    background: rgb(37,3,41);
+    background: linear-gradient(92deg, rgba(37,3,41,1) 0%, rgba(80,53,84,1) 100%, rgba(150,76,244,1) 100%);
+    padding: 5px;
+}
+
+.logo-safe{
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+}
+
+.logo-safe h1{
+    font-family: "open sans";
+    font-size: 400%;
+    font-weight:bolder;
+    color: white;
+    margin-right: 200px;
+}
+
+.logo-safe img{
+    width:135px;
+}
+
+.left-items-header{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    
+}
+
+.left-items-header h3{
+    display: flex;
+    margin: 3px;
+    font-family: "alex brush";
+    font-size: 220%;
+    font-weight: lighter;
+    color: white;
+    margin-right: 150px;
+}
+
+.right-items-header{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items:center;
+    justify-content: flex-end;
+    width: 70%;
+}
+
+.right-items-header-1{
+    margin-right: 400px;
+    display: flex;
+    align-items: center;
+}
+.right-items-header-2{
+    margin-right: 80px;
+}
+.right-items-header-1 img, .right-items-header-2 img {
+    margin: 10px;
+    width: 40px;
+}
+
+#search{
+    width: 350px;
+    height: 30px;
+    border-radius: 20px;
+    border:0;
+    background:rgba(250, 235, 215, 0.5);
+    color: black;
+   
+}
+
+.les-vins{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0 4rem;
+}
+

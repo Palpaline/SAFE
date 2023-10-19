@@ -10,13 +10,36 @@
 
 <body>
     <header>
+        <div class="left-items-header">
+            <div class="logo-safe">
+                <img src="Images/logoSAFE.png" alt="logoSAFE">
+                <h1>SAFE</h1>
+            </div>
+
+            <h3>Une soirée en toute sécurité</h3>
+        </div>
+
+        <div class="right-items-header">
+            <div class="right-items-header-1">
+                <img src="Images/ButtonHOME.png" alt="buttonHOME" id="buttonHOME">
+                <img src="Images/ButtonSEARCH.png" alt="buttonSEARCH">
+                <input type="search" name="search" id="search" placeholder="Je cherche un produit">
+            </div>
+            <div class="right-items-header-2">
+                <img src="Images/ButtonBASKET.png" alt="buttonBASKET">
+                <img src="Images/imgPROFIL.png" alt="buttonPROFIL">
+            </div>
+        </div>
+
     </header>
+
+
     <!-- recherche et trie        -->
     <main>
         <div class="ariane">
             <ul>
-                <li><a href="#">Accueil</a> </li>
-                <li><a href="#">Alcools</a> </li>
+                <li><a href="SAFEhome.html">Accueil</a> </li>
+                <li><a href="SAFEalcoolsvinschampagnes.html">Alcools</a> </li>
             </ul>
             <div id="trait_dessus">
                   <hr>
@@ -33,49 +56,37 @@
 
         </div>
 
+        <div class="les-vins">
+
+        </div>
 
         <!-- carte produit vin  -->
         <!-- bouteille  -->
-        <section class="card-wine">
+        <!-- <section class="card-wine">
             <div class="vin-bg">
                 <img id="bouteille" class="vin" src="Images/La-Croix-DArdit-2019.png" alt="croix d'ardet" height="100"
                     width="">
-            </div>
+            </div>-->
             <!-- titre et prix  -->
-            <p class="titre">Bordeaux</p>
+            <!-- <p class="titre">Bordeaux</p>
             <p class="paratitre">Croix d'Ardet 75cl</p>
-            <p class="prix">12€90 TTC</p>
+            <p class="prix">12€90 TTC</p> -->
             <!-- bouton  -->
-            <div id="input_div">
+            <!-- <div id="input_div">
                 <img src="Images/moins.png" id="moins" onclick="minus()" width="25">
 
                 <input type="text" size="1" value="0" id="count">
                 <img src="Images/ajouter.png" value="+" id="plus" onclick="plus()" width="30">
                 <img src="Images/champagne.png" id="panier" onclick="panier()" width="25">
 
-                <script>
-                    var count = 0;
-                    var countEl = document.getElementById("count");
-                    function plus() {
-                        count++;
-                        countEl.value = count;
-                    }
-                    function minus() {
-                        if (count > 1) {
-                            count--;
-                            countEl.value = count;
-                        }
-                    }
-                    function panier() {
-                        alert("article(s) ajoutée(s)")
-                    }
-                </script>
+              
             </div>
-        </section>
-
+        </section> -->
 
     </main>
 
+
+    <script src="SAFEalcoolsvinschampagnes.js"></script>
 </body>
 
 </html>

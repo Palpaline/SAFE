@@ -1,18 +1,3 @@
-@font-face {
-    font-family: "open sans";
-    src: url(Images/OpenSans-VariableFont_wdth\,wght.ttf);
-}
-@font-face {
-    font-family: "alex brush";
-    src: url(Images/AlexBrush-Regular.ttf);
-}
-
-*{
-    margin: 0;
-    padding: 0;
-}
-
-
 header {
     display:flex;
     justify-content: space-between;
@@ -34,10 +19,11 @@ header {
     font-size: 400%;
     font-weight:bolder;
     color: white;
+    margin-right: 200px;
 }
 
 .logo-safe img{
-    width:150px
+    width:135px;
 }
 
 .left-items-header{
@@ -46,14 +32,17 @@ header {
     justify-content: center;
     align-items: center;
     width: 30%;
+    
 }
 
 .left-items-header h3{
+    display: flex;
     margin: 3px;
     font-family: "alex brush";
-    font-size: 225%;
+    font-size: 220%;
     font-weight: lighter;
     color: white;
+    margin-right: 150px;
 }
 
 .right-items-header{
@@ -86,4 +75,34 @@ header {
     background:rgba(250, 235, 215, 0.5);
     color: black;
    
+}
+
+@font-face {
+    font-family: "open sans";
+    src: url(Images/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+@font-face {
+    font-family: "alex brush";
+    src: url(Images/AlexBrush-Regular.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* background  */
+
+* {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+main {
+    background-image: url(Images/BACKGROUND.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    height: 720px;
 }
