@@ -207,18 +207,24 @@ header {
     filter: drop-shadow(6px 6px 4px rgba(0, 0, 0, 0.600));
 }
 
-.contact,
-.nous,
-.ethanol {
+/* banniére fin  */
+
+.sousbanniere{
+position: absolute;
+bottom: 0;
     display: flex;
-    justify-content: space-around;
-align-items:flex-end ;
-float:left;
-    margin-left: 10%;
-    margin-top: 107px;
-    
+    justify-content: space-between;
+    padding: 0 2rem;
+    align-items: center;
+    right: 0;
+    left: 0;
+
+}
+
+body{
+    position: relative
 }
 
 .info h1{
-    
+
 }
