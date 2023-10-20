@@ -5,11 +5,12 @@
 }
 
 main {
-    background-image: url(Images/BACKGROUND.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+   
     color: white;
     height: 720px;
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
 }
 
 
@@ -23,6 +24,10 @@ main {
 @font-face {
     font-family: "alex brush";
     src: url(Images/AlexBrush-Regular.ttf);
+}
+@font-face {
+    font-family: "open light";
+    src: url(Images/OpenSans-Light.ttf);
 }
 
 * {
@@ -128,5 +133,75 @@ header {
     }
     
     body{
-        position: relative
+        position: relative;
+        overflow-x: hidden;
+        background-image: url(Images/BACKGROUND.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 125vh;
     }
+
+    .infonous {
+        background: rgb(180, 172, 195);
+        background: linear-gradient(180deg, rgba(180, 172, 195, 1) 0%, rgba(70, 37, 132, 0) 100%);
+        width: 1400px;
+        height: 700px;
+        border: 4px;
+        display: flex;
+        border-radius: 10%; 
+        filter: drop-shadow(6px 6px 4px rgba(0, 0, 0, 0.600));
+    }
+
+    .titrenous{
+        font-family: "open sans";
+        font-size: 25px;
+        color: black;
+        text-align: left;
+        margin-top: 40px;
+        margin-left: 50px;
+        margin-bottom: 15px;
+    }
+
+    .SAFE{
+        font-family: "open sans";
+        font-size: 15px;
+        color: black;
+        text-align: left;
+        margin-left: 50px;
+        line-height: 30px;
+    }
+
+    .début{
+        font-family: "open light";
+        font-size: 15px;
+        color: black;
+        margin-left: 50px;
+
+    }
+
+    .one {
+        font-family: "open light";
+        font-size: 15px;
+        color: black;
+        margin-left: 50px;
+        line-height: 20px;
+
+    }
+    span{
+        font-family: "open sans";
+        font-size: 15px;
+        color: black;
+       line-height: 10px;
+
+    }
+
+    .infonous{
+        display: flex;  
+        flex-wrap: wrap;
+    }
+    
+    .infonous section{
+        width: 55rem;
+    }
+    
+

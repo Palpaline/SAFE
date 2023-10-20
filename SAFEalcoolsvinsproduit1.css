@@ -209,9 +209,9 @@ header {
 
 /* banniére fin  */
 
-.sousbanniere{
-position: absolute;
-bottom: 0;
+.sousbanniere {
+    position: absolute;
+    bottom: 0;
     display: flex;
     justify-content: space-between;
     padding: 0 2rem;
@@ -221,10 +221,55 @@ bottom: 0;
 
 }
 
-body{
+body {
     position: relative
 }
 
-.info h1{
+.titre {
+    font-family: "open sans";
+    font-size: 30px;
+    color: black;
+    text-align: center;
+}
 
+.info h2 {
+    font-family: "open sans";
+    font-size: 20px;
+    color: black;
+    margin: 50px 40px;
+}
+
+.prix {
+    font-family: "open sans";
+    font-size: 30px;
+    color: black;
+    text-align: center;
+}
+
+/* bouton  */
+
+.count {
+    background-color: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 18px;
+    text-align: center;
+    border: black;
+    margin-left: 3px;
+}
+
+.moins,
+.plus,
+.panier {
+    padding: 2px;
+    color: black;
+    font-size: x-large
+}
+
+#input_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
 }

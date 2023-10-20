@@ -9,29 +9,29 @@
 </head>
 
 <body>
-        <header>
-            <div class="left-items-header">
-                <div class="logo-safe">
-                    <img src="Images/logoSAFE.png" alt="logoSAFE">
-                    <h1>SAFE</h1>
-                </div>
-    
-                <h3>Une soirée en toute sécurité</h3>
+    <header>
+        <div class="left-items-header">
+            <div class="logo-safe">
+                <img src="Images/logoSAFE.png" alt="logoSAFE">
+                <h1>SAFE</h1>
             </div>
-    
-            <div class="right-items-header">
-                <div class="right-items-header-1">
-                    <img src="Images/ButtonHOME.png" alt="buttonHOME" id="buttonHOME">
-                    <img src="Images/ButtonSEARCH.png" alt="buttonSEARCH">
-                    <input type="search" name="search" id="search" placeholder="Je cherche un produit">
-                </div>
-                <div class="right-items-header-2">
-                    <img src="Images/ButtonBASKET.png" alt="buttonBASKET">
-                    <img src="Images/imgPROFIL.png" alt="buttonPROFIL">
-                </div>
+
+            <h3>Une soirée en toute sécurité</h3>
+        </div>
+
+        <div class="right-items-header">
+            <div class="right-items-header-1">
+                <img src="Images/ButtonHOME.png" alt="buttonHOME" id="buttonHOME">
+                <img src="Images/ButtonSEARCH.png" alt="buttonSEARCH">
+                <input type="search" name="search" id="search" placeholder="Je cherche un produit">
             </div>
-    
-        </header>
+            <div class="right-items-header-2">
+                <img src="Images/ButtonBASKET.png" alt="buttonBASKET">
+                <img src="Images/imgPROFIL.png" alt="buttonPROFIL">
+            </div>
+        </div>
+
+    </header>
     <!-- recherche et trie        -->
     <main>
         <main class="ariane">
@@ -43,26 +43,36 @@
             <div id="trait_dessus">
                 <hr>
             </div>
-
+<!-- conteneur produit  -->
             <div class="conteneur-produit">
                 <section class="produits">
                     <section class="vin-bg">
-                        <img id="bouteille" class="vin" src="Images/La-Croix-DArdit-2019.png" alt="croix d'ardet">
+                        <img id="bouteille" class="vin" src="" alt="croix d'ardet">
                     </section>
                 </section>
-
+<!-- information  -->
                 <section class="info">
-                    <h1>Bordeaux Croix d’Ardet, 75cl</h1>
-                    <h2>Bordeaux Croix d'Ardet, c'est l'harmonie des saveurs qui dansent sur votre palais. Des notes de fruits mûrs, une élégance inégalée, et une finale qui laisse une empreinte mémorable. Vivez l'essence de Bordeaux à chaque dégustation.</h2>
+                    <h1 class="titre"></h1>
+                    <h2 class="description"></h2>
+                    <h1 class="prix"></h1>
+                    <div id="input_div">
+                        <img src="Images/moins.png" class="moins" width="40">
+
+                        <input type="text" size="1" value="0" class="count">
+                        <img src="Images/ajouter.png" value="+" class="plus" width="45">
+                        <img src="Images/champagne.png" class="panier" width="40">
+                        <script src="SAFEalcoolsvinsproduit1.js"></script>
+                    </div>
                 </section>
             </div>
             <!-- rectangle référence  -->
 
 
 
-
         </main>
-        
+
+
+
         <!-- sous banniere  -->
         <div class="sousbanniere">
             <a class="nous" href="SAFEaproposdenous.html">Qui nous somme ?</a>
