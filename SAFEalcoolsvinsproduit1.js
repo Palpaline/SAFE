@@ -1,3 +1,9 @@
+const params= new URLSearchParams(location.search);
+
+const titreParam = params.get("titre");
+const titre2Param = params.get("titre2");
+
+
 const vins = [
     {
         titre: "Bordeaux",
@@ -85,7 +91,10 @@ const vins = [
     },
 ]
 
-const vin = vins[0]
+// const vin = vins[0]
+const vin = vins.find(vin => vin.titre.includes(titreParam) && vin.titre2.includes(titre2Param));
+
+console.log(vin);
 
 
 

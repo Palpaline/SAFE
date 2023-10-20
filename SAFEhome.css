@@ -115,18 +115,19 @@ header {
 
 /* banniére fin  */
 
-.sousbanniere{
+.sousbanniere {
     position: absolute;
     bottom: 0;
-        display: flex;
-        justify-content: space-between;
-        padding: 0 2rem;
-        align-items: center;
-        right: 0;
-        left: 0;
-    
-    }
-    
-    body{
-        position: relative
-    }
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+    align-items: center;
+    right: 0;
+    left: 0;
+
+}
+
+body {
+    position: relative
+}
+

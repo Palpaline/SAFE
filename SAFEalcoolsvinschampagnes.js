@@ -79,7 +79,7 @@ const lesVins = document.querySelector(".les-vins");
 vins.map((vin, index) => {
     const cardWine = document.createElement("section");
     cardWine.classList.add("card-wine");
-    cardWine.innerHTML = `<a href="SAFEalcoolsvinsproduit1.html"><div class="vin-bg">
+    cardWine.innerHTML = `<a href="SAFEalcoolsvinsproduit1.html?titre=${vin.titre}&titre2=${vin.titre2}"><div class="vin-bg">
 <img id="bouteille" class="vin" src=${vin.image} alt="croix d'ardet" height="100"
     width="">
 </div>
