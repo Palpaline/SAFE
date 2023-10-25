@@ -19,7 +19,7 @@ jQuery(document).ready(function ($) {
 
 });
 
-// pop up 
+// pop up
 
 const openModalButtons = document.querySelectorAll('.open-modal'),
       modal = document.querySelector('.modal'),

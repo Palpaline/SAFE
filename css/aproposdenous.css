@@ -1,0 +1,53 @@
+/* to check */
+main {
+    /* color: white;
+    height: 720px; */
+    display: flex;
+    justify-content: center;
+    /* margin: 2rem 0; */
+}
+
+body {
+    background-image: url(../assets/BACKGROUND.png);
+}
+
+.infonous {
+    background: rgb(180, 172, 195);
+    background: url(../assets/groupe.png) no-repeat right, linear-gradient(180deg, #B4ACC3 0%, transparent);
+    border-radius: 2rem;
+    border: 4px;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, .3);
+    padding: 2rem 500px 2rem 2rem;
+    width : 90%;
+    align-items: center;
+}
+
+.titrenous {
+    font-size: 25px;
+    color: black;
+    text-align: left;
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+.SAFE {
+    color: black;
+    text-align: left;
+    line-height: 30px;
+}
+
+.debut, .one {
+    font-family: "open light";
+    font-size: 15px;
+    color: black;
+    font-weight: bold;
+}
+.debut {
+    padding-bottom: 2rem;
+}
+.infonous span{
+    font-family: "open sans";
+    font-size: 15px;
+    color: black;
+    line-height: 10px;
+}

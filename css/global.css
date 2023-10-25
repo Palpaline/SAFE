@@ -1,0 +1,100 @@
+
+@font-face {
+    font-family: "open sans";
+    src: url(../assets/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+
+@font-face {
+    font-family: "alex brush";
+    src: url(../assets/AlexBrush-Regular.ttf);
+}
+@font-face {
+    font-family: "open light";
+    src: url(../assets/OpenSans-Light.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(../assets/BACKGROUND.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #000;
+    font: 1rem "open sans", sans-serif;
+    min-height: 100vh;
+}
+
+main {
+    margin: 0 auto;
+    padding-top: 2rem;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+button {
+    cursor: pointer;
+}
+
+.footer {
+    align-items: center;
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    margin-top: 2rem;
+    padding: 0 2rem;
+}
+.footer a {
+    text-wrap: nowrap;
+}
+
+.footer .buddies {
+    height: auto;
+    max-width: 800px;
+}
+
+
+
+
+/* si on veut forcer le footer en bas même sur les pages dont le main n'est pas assez haut pour pousser le footer */
+body {
+    display: flex;
+    flex-direction: column;
+}
+main {
+    flex-grow: 1;
+    text-align: left;
+    width: 100%;
+}
+
+.produits {
+	display: flex;
+	flex-direction:row;
+	justify-content: space-around;
+}
+
+.produits section{
+    width: 300px;
+text-align: center;
+}
+
+.banniere-promos{
+    background-image: url(../assets/BannièrePROMOS.png);
+    width: 100%;
+    background-size: cover;
+    height: 60vh;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+}
+
+#promo1{
+    position: relative;
+    left: 13rem;
+}

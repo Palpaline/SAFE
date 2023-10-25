@@ -1,0 +1,70 @@
+header {
+    background: rgb(37, 3, 41);
+    background: linear-gradient(92deg, rgba(37, 3, 41, 1) 0%, rgba(80, 53, 84, 1) 100%, rgba(150, 76, 244, 1) 100%);
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem 1rem .5rem 0;
+
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.logo {
+	align-items: center;
+	color: white;
+	display: flex;
+	font-size: 400%;
+	font-weight: bold;
+}
+
+.logo img {
+	width: 135px;
+}
+
+.header-left > span {
+	font-family: "alex brush";
+	font-size: 220%;
+	color: white;
+	padding-left: 2rem;
+}
+
+.header-center {
+	display: flex;
+	gap: 1rem;
+}
+
+.header-icons {
+	display: flex;
+	gap: 1rem;
+}
+.basket-icon {
+	background: url("../assets/ButtonBASKET.png") no-repeat;
+	width: 50px;
+	height: 58px;
+	display: block;
+}
+.profile-icon {
+	background: url("../assets/imgPROFIL.png") no-repeat;
+	width: 50px;
+	height: 58px;
+	display: block;
+}
+
+#search {
+	background-color: rgba(255, 255, 255, .4);
+	border-radius: 2rem;
+	border: 0;
+	color: black;
+	font-size: 1.125rem;
+	outline: none;
+	padding: 0 2rem;
+	transition: .5s ease;
+	width: 350px;
+}
+#search:focus {
+	background-color: rgba(255, 255, 255, .8);
+}
+#search::placeholder {
+	color: rgb(37, 3, 41);
+	opacity: 1; /* Firefox */
+  }
