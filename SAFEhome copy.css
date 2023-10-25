@@ -1,32 +1,12 @@
-@font-face {
-    font-family: "open sans";
-    src: url(Images/OpenSans-VariableFont_wdth\,wght.ttf);
-}
-@font-face {
-    font-family: "alex brush";
-    src: url(Images/AlexBrush-Regular.ttf);
-}
-
-
-header {
-    height: 150px;
-    width: 100%;
-    background: rgb(37,3,41);
-    background: linear-gradient(92deg, rgba(37,3,41,1) 0%, rgba(80,53,84,1) 100%, rgba(150,76,244,1) 100%);
-}
-
 #logosafe{
     height: 110px;
     width: 130px;
-} 
-    
+}
 
 #nomSAFE {
     font-family: "open sans";
     font-size: 500%;
     color: rgb(133, 35, 35);
-   
-
 }
 
 #slogan {

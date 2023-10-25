@@ -4,73 +4,73 @@ const vins = [
         titre: "Bordeaux",
         titre2: "Croix d'Ardet 75cl",
         prix: "12€90 TTC",
-        image: "Images/La-Croix-DArdit-2019.png"
+        image: "../Images/La-Croix-DArdit-2019.png"
     },
     {
         titre: "Château",
         titre2: "Trois Moulin 75cl",
         prix: "18€90 TTC",
-        image: "Images/chateau-3-moulin.png"
+        image: "../Images/chateau-3-moulin.png"
     },
     {
         titre: "Château",
         titre2: "De Chambert 75cl",
         prix: "22€90 TTC",
-        image: "Images/chateau-chambert.png"
+        image: "../Images/chateau-chambert.png"
     },
     {
         titre: "Château",
         titre2: "La Blanquerie 75cl",
         prix: "28€90 TTC",
-        image: "Images/la-blanquerie.png"
+        image: "../Images/la-blanquerie.png"
     },
     {
         titre: "Saint Emilion",
         titre2: "De Marzenac 75cl",
         prix: "30€90 TTC",
-        image: "Images/marzenac.png"
+        image: "../Images/marzenac.png"
     },
     {
         titre: "Montecillo 75cl",
         titre2: "",
         prix: "42€90 TTC",
-        image: "Images/montecillo.png"
+        image: "../Images/montecillo.png"
     },
     {
         titre: "Champagne",
         titre2: "Mercier 1L",
         prix: "32€90 TTC",
-        image: "Images/mercier.png"
+        image: "../Images/mercier.png"
     },
     {
         titre: "Champagne",
         titre2: "Delamotte 1L",
         prix: "42€90 TTC",
-        image: "Images/delamotte.png"
+        image: "../Images/delamotte.png"
     },
     {
         titre: "Champagne",
         titre2: "Renard 1L",
         prix: "52€90 TTC",
-        image: "Images/renard.jpg"
+        image: "../Images/renard.jpg"
     },
     {
         titre: "Champagne",
         titre2: "De Castellane 1L",
         prix: "60€90 TTC",
-        image: "Images/castellane.png"
+        image: "../Images/castellane.png"
     },
     {
         titre: "Champagne",
         titre2: "Lamoureux 1L",
         prix: "82€90 TTC",
-        image: "Images/lamoureux.png"
+        image: "../Images/lamoureux.png"
     },
     {
         titre: "Champagne",
         titre2: "Ruinart 1L5",
         prix: "90€90 TTC",
-        image: "Images/ruinart.png"
+        image: "../Images/ruinart.png"
     },
 ]
 
@@ -90,11 +90,11 @@ vins.map((vin, index) => {
 </a>
 <!-- bouton  -->
 <div id="input_div">
-<img src="Images/moins.png" class="moins" width="25">
+<img src="../Images/moins.png" class="moins" width="25">
 
 <input type="text" size="1" value="0" class="count">
-<img src="Images/ajouter.png" value="+" class="plus" width="30">
-<img src="Images/champagne.png" class="panier" width="25">
+<img src="../Images/ajouter.png" value="+" class="plus" width="30">
+<img src="../Images/champagne.png" class="panier" width="25">
 
 
 </div>`
