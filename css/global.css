@@ -98,3 +98,23 @@ text-align: center;
     position: relative;
     left: 13rem;
 }
+
+#search-list{
+    display: none;
+    background: #fff;
+    padding: 2rem;
+    position: absolute;
+    top:3.9rem;
+    left: 8.5rem;
+    width: 21rem;
+    border-radius: 0 0 2rem 2rem;
+}
+
+#search-list li{
+    list-style-type: none;
+}
+
+#search-list a{
+    text-decoration: none;
+    color:#000;
+}

@@ -1,11 +1,11 @@
 header {
-    background: rgb(37, 3, 41);
-    background: linear-gradient(92deg, rgba(37, 3, 41, 1) 0%, rgba(80, 53, 84, 1) 100%, rgba(150, 76, 244, 1) 100%);
-    display: flex;
-    justify-content: space-between;
-    padding: .5rem 1rem .5rem 0;
+	background: rgb(37, 3, 41);
+	background: linear-gradient(92deg, rgba(37, 3, 41, 1) 0%, rgba(80, 53, 84, 1) 100%, rgba(150, 76, 244, 1) 100%);
+	display: flex;
+	justify-content: space-between;
+	padding: .5rem 1rem .5rem 0;
 
-	align-items: center;
+	align-items: flex-start;
 	flex-wrap: wrap;
 }
 
@@ -21,7 +21,7 @@ header {
 	width: 135px;
 }
 
-.header-left > span {
+.header-left>span {
 	font-family: "alex brush";
 	font-size: 220%;
 	color: white;
@@ -31,18 +31,22 @@ header {
 .header-center {
 	display: flex;
 	gap: 1rem;
+	position: relative;
 }
 
 .header-icons {
 	display: flex;
+	align-items: center;
 	gap: 1rem;
 }
+
 .basket-icon {
 	background: url("../assets/ButtonBASKET.png") no-repeat;
 	width: 50px;
 	height: 58px;
 	display: block;
 }
+
 .profile-icon {
 	background: url("../assets/imgPROFIL.png") no-repeat;
 	width: 50px;
@@ -61,10 +65,44 @@ header {
 	transition: .5s ease;
 	width: 350px;
 }
+
 #search:focus {
 	background-color: rgba(255, 255, 255, .8);
 }
+
 #search::placeholder {
 	color: rgb(37, 3, 41);
-	opacity: 1; /* Firefox */
-  }
+	opacity: 1;
+	/* Firefox */
+}
+
+.basket-icon:hover {
+	background: url("../assets/buttonBASKET2.png") no-repeat;
+	width: 50px;
+	height: 58px;
+	display: block;
+}
+
+.profile-icon:hover {
+	background: url("../assets/buttonPROFILE2.png") no-repeat;
+	width: 50px;
+	height: 58px;
+	display: block;
+}
+
+.buttonHOME{
+	background: url("../assets/ButtonHOME.png") no-repeat;
+	width: 50px;
+	height: 58px;
+	display: block;
+}
+.buttonHOME:hover{
+	background: url("../assets/buttonHOME2.png") no-repeat;
+	width: 50px;
+	height: 58px;
+	display: block;
+}
+
+.header-left:hover a, .header-left:hover span{
+	color: #F6B265;
+}

@@ -21,9 +21,12 @@
 			<span>Une soirée en toute sécurité</span>
 		</div>
 		<div class="header-center">
-			<img src="../assets/ButtonHOME.png" alt="buttonHOME">
-			<img src="../assets/ButtonSEARCH.png" alt="buttonSEARCH">
+			<a href="index.html" class="buttonHOME"></a>
+			<img src="../assets/ButtonSEARCH.png" alt="buttonSEARCH" id="buttonSEARCH">
 			<input type="search" name="search" id="search" placeholder="Je cherche un produit">
+			<ul id="search-list">
+
+			</ul>
 		</div>
 		<div class="header-icons">
 			<a href="./panier.html" class="basket-icon"></a>
@@ -76,16 +79,17 @@
 	<div class="alert on">
 		<div class="alert-content">
 			<button class="alert-close"></button>
-			<img src="../assets/lalcool-cest-pas-cool-pas-cool.gif" alt="L'alcool c'est pas cool ?">
+			<img src="../assets/mecquiboit.gif" alt="Gars qui boit">
 			<p>
-				ça peut...
-				<br>...mais à condition de faire attention...
-				<br><br><button class="confirm">ok, j'ai compris !</button>
+				Bienvenue chez SAFE !
+				<br>Mais attention, l'alcool est à consommer avec modération...
+				<br><br><button class="confirm">J'ai (au moins) 18 ans, je peux entrer !</button>
 			</p>
 		</div>
 		<div class="alert-overlay"></div>
 	</div>
 	<script src="../scripts/alert.js"></script>
+	<script src="../scripts/header.js"></script>
 </body>
 
 </html>
