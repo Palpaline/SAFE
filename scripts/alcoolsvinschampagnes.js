@@ -81,8 +81,8 @@ vins.map((vin, index) => {
     cardWine.classList.add("card-wine");
     cardWine.innerHTML = `
         <a href="alcoolsvinsproduit1.html?titre=${vin.titre}&titre2=${vin.titre2}">
-            <div class="vin-bg">
-                <img id="bouteille" class="vin" src=${vin.image} alt="croix d'ardet" height="100" width="">
+            <div class="vin">
+                <img id="bouteille" src=${vin.image} alt="croix d'ardet" height="100" width="">
             </div>
             <p class="titre">${vin.titre}</p>
             <p class="paratitre">${vin.titre2}</p>

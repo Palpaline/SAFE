@@ -38,7 +38,7 @@ const vins = [
         titre2: "De Marzenac 75cl",
         prix: "30€90 TTC",
         image: "../assets/marzenac.png",
-        description : "En bouche l'équilibre est apporté par la fraicheur et une concentration mesurée. niveaux olfactif de petits fruits rouges et noirs qui s'enrichit de notes d'épices douces et d'arômes légèrement grillés, à l'oeil note vin a une belle robe d'un pourpre soutenu avec une belle brillance."
+        description : "En bouche l'équilibre est apporté par la fraicheur et une concentration mesurée. Petits fruits rouges et noirs qui s'enrichissent de notes d'épices douces et d'arômes légèrement grillés. Une belle robe d'un pourpre soutenu avec une belle brillance."
     },
     {
         titre: "Montecillo 75cl",
@@ -59,7 +59,7 @@ const vins = [
         titre2: "Delamotte 1L",
         prix: "42€90 TTC",
         image: "../assets/delamotte.png",
-        description: "Delamotte Brut est un champagne qui met en appétit. On l'apprécie autant à l'apéritif d'une célébration comme un mariage, qu'entre amis lors d'une simple envie de champagne, autour de gressinsou encore crakers aux graines, sans oublier de croquants radis !"
+        description: "Delamotte Brut est un champagne qui met en appétit. On l'apprécie autant à l'apéritif d'une célébration comme un mariage, qu'entre amis lors d'une simple envie de champagne, autour de gressins ou encore crackers aux graines, sans oublier de croquants radis !"
     },
     {
         titre: "Champagne",
@@ -80,14 +80,14 @@ const vins = [
         titre2: "Lamoureux 1L",
         prix: "82€90 TTC",
         image: "../assets/lamoureux.png",
-        description:"Sa robe rouge vif viendra séduire nos Dames. Issu d'un travail minutieux de sélection et de vinification pour obtenir ce côté « Glossy » qui qualifie parfaitement cette cuvée. Les Messieurs seront aussi séduits par ce nez chaleureux s’ouvrant sur des notes de fruits rouges et de cerises à l’eau de vie."
+        description:"Issu d'un travail minutieux de sélection et de vinification pour obtenir ce côté « Glossy » qui qualifie parfaitement cette cuvée. Les Messieurs seront aussi séduits par ce nez chaleureux s'ouvrant sur des notes de fruits rouges et de cerises à l'eau de vie."
     },
     {
         titre: "Champagne",
         titre2: "Ruinart 1L5",
         prix: "90€90 TTC",
         image: "../assets/ruinart.png",
-        description: " Exclusivement élaborée à partir de chardonnay, c'est un vin délicat entre fraîcheur et rondeur.Cet assemblage issu de différents crus de chardonnay soigneusement sélectionnés offre une expérience gustative fruitée aux notes d’agrumes. La fraîcheur aromatique dans son élégante simplicité."
+        description: "Exclusivement élaborée à partir de chardonnay, c'est un vin délicat entre fraîcheur et rondeur.Cet assemblage issu de différents crus de chardonnay soigneusement sélectionnés offre une expérience gustative fruitée aux notes d'agrumes."
     },
 ]
 
@@ -98,7 +98,7 @@ console.log(vin);
 
 
 
-//ajout des information du vin choisi (affichage de son détail)
+//ajout des informations du vin choisi (affichage de son détail)
 const titreVin = document.querySelector(".titre");
 titreVin.textContent = vin.titre + " " + vin.titre2;
 

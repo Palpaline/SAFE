@@ -6,9 +6,10 @@
     <title>alcools, vins, champagnes - SAFE</title>
     <link rel="stylesheet" href="../css/global.css">
     <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/nav.css">
     <link rel="stylesheet" href="../css/alcoolsvinschampagnes.css">
 </head>
-<body>
+<body class="productpage">
     <header>
         <div class="header-left">
             <a class="logo" href="index.html">
@@ -27,17 +28,57 @@
 			<a href="#" class="profile-icon"></a>
 		</div>
     </header>
+	<nav class="header__nav nav">
+		<div class="nav__category">
+			<a class="nav__category__link" href="#">Alcools</a>
+			<ul class="nav__category__sublinks">
+				<li><a class="nav__category__sublink" href="#">Vins / champagnes</a></li>
+				<li><a class="nav__category__sublink" href="#">Bières / divers</a></li>
+				<li><a class="nav__category__sublink" href="#">Spiritueux</a></li>
+			</ul>
+		</div>
+		<div class="nav__category">
+			<a class="nav__category__link" href="#">Softs</a>
+			<ul class="nav__category__sublinks">
+				<li><a class="nav__category__sublink" href="#">Sodas</a></li>
+				<li><a class="nav__category__sublink" href="#">Jus de fruits</a></li>
+				<li><a class="nav__category__sublink" href="#">Eaux</a></li>
+			</ul>
+		</div>
+		<div class="nav__category">
+			<a class="nav__category__link" href="#">Snack</a>
+			<ul class="nav__category__sublinks">
+				<li><a class="nav__category__sublink" href="#">Sucré</a></li>
+				<li><a class="nav__category__sublink" href="#">Salé</a></li>
+			</ul>
+		</div>
+		<div class="nav__category">
+			<a class="nav__category__link" href="#">Remèdes</a>
+			<ul class="nav__category__sublinks">
+				<li><a class="nav__category__sublink" href="#">Lendemains difficiles</a></li>
+				<li><a class="nav__category__sublink" href="#">Conseils de grand-mère</a></li>
+			</ul>
+		</div>
+		<div class="nav__category">
+			<a class="nav__category__link" href="#">Location matelas</a>
+			<ul class="nav__category__sublinks">
+				<li><a class="nav__category__sublink" href="#">Une place</a></li>
+				<li><a class="nav__category__sublink" href="#">Deux places</a></li>
+			</ul>
+		</div>
+		<div class="nav__category">
+			<a class="nav__category__link" href="#">PACKS</a>
+		</div>
+		<div class="nav__category">
+			<a class="nav__category__link" href="#">PROMOS</a>
+		</div>
+	</nav>
     <main>
-        <div class="ariane">
-            <ul>
-                <li><a href="SAFEhome.html">Accueil</a></li>
-                <li><a href="SAFEalcoolsvinschampagnes.html">Alcools</a></li>
-            </ul>
-            <div id="trait_dessus">
-                <hr>
-                <h1>Vins/Champagnes</h1>
-            </div>
-        </div>
+        <nav class="ariane">
+            <a href="/home.html">Accueil</a>
+            <a href="/alcoolsvinschampagnes.html">Alcools</a>
+        </nav>
+        <h1>Vins / Champagnes</h1>
         <select class="tri" aria-label="small tri">
             <option selected="Trier par : ">Trier par :</option>
             <option value="1">Prix: Ordre Croissant</option>
@@ -46,22 +87,15 @@
             <option value="4">Dernières arrivées</option>
         </select>
 
-        </div>
-
         <div class="les-vins"></div>
-        <!-- carte produit vin  -->
-        <!-- bouteille  -->
         <!-- <section class="card-wine">
-            <div class="vin-bg">
-                <img id="bouteille" class="vin" src="../assets/La-Croix-DArdit-2019.png" alt="croix d'ardet" height="100"
-                    width="">
-            </div>-->
-        <!-- titre et prix  -->
-        <!-- <p class="titre">Bordeaux</p>
+            <div class="vin">
+                <img id="bouteille" src="../assets/La-Croix-DArdit-2019.png" alt="croix d'ardet" height="100" width="">
+            </div>
+            <p class="titre">Bordeaux</p>
             <p class="paratitre">Croix d'Ardet 75cl</p>
-            <p class="prix">12€90 TTC</p> -->
-        <!-- bouton  -->
-        <!-- <div id="input_div">
+            <p class="prix">12€90 TTC</p>
+            <div id="input_div">
                 <img src="../assets/moins.png" id="moins" onclick="minus()" width="25">
                 <input type="text" size="1" value="0" id="count">
                 <img src="../assets/ajouter.png" value="+" id="plus" onclick="plus()" width="30">

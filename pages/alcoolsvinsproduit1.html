@@ -6,9 +6,10 @@
     <title>Vins - SAFE</title>
     <link rel="stylesheet" href="../css/global.css">
     <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/nav.css">
     <link rel="stylesheet" href="../css/alcoolsvinsproduit1.css">
 </head>
-<body>
+<body class="productpage">
     <header>
         <div class="header-left">
             <a class="logo" href="index.html">
@@ -27,37 +28,73 @@
 			<a href="#" class="profile-icon"></a>
 		</div>
     </header>
-    <main class="ariane">
-        <ul>
-            <li><a href="SAFEhome.html">Accueil</a> </li>
-            <li><a href="SAFEalcoolsvinschampagnes.html">Alcools</a> </li>
-            <li><a href="SAFEalcoolsvinsproduit1.html">Bordeaux Croix d'Ardet</a> </li>
-        </ul>
-        <div id="trait_dessus">
-            <hr>
-        </div>
-<!-- conteneur produit  -->
+	<nav class="header__nav nav">
+		<div class="nav__category">
+			<a class="nav__category__link" href="#">Alcools</a>
+			<ul class="nav__category__sublinks">
+				<li><a class="nav__category__sublink" href="#">Vins / champagnes</a></li>
+				<li><a class="nav__category__sublink" href="#">Bières / divers</a></li>
+				<li><a class="nav__category__sublink" href="#">Spiritueux</a></li>
+			</ul>
+		</div>
+		<div class="nav__category">
+			<a class="nav__category__link" href="#">Softs</a>
+			<ul class="nav__category__sublinks">
+				<li><a class="nav__category__sublink" href="#">Sodas</a></li>
+				<li><a class="nav__category__sublink" href="#">Jus de fruits</a></li>
+				<li><a class="nav__category__sublink" href="#">Eaux</a></li>
+			</ul>
+		</div>
+		<div class="nav__category">
+			<a class="nav__category__link" href="#">Snack</a>
+			<ul class="nav__category__sublinks">
+				<li><a class="nav__category__sublink" href="#">Sucré</a></li>
+				<li><a class="nav__category__sublink" href="#">Salé</a></li>
+			</ul>
+		</div>
+		<div class="nav__category">
+			<a class="nav__category__link" href="#">Remèdes</a>
+			<ul class="nav__category__sublinks">
+				<li><a class="nav__category__sublink" href="#">Lendemains difficiles</a></li>
+				<li><a class="nav__category__sublink" href="#">Conseils de grand-mère</a></li>
+			</ul>
+		</div>
+		<div class="nav__category">
+			<a class="nav__category__link" href="#">Location matelas</a>
+			<ul class="nav__category__sublinks">
+				<li><a class="nav__category__sublink" href="#">Une place</a></li>
+				<li><a class="nav__category__sublink" href="#">Deux places</a></li>
+			</ul>
+		</div>
+		<div class="nav__category">
+			<a class="nav__category__link" href="#">PACKS</a>
+		</div>
+		<div class="nav__category">
+			<a class="nav__category__link" href="#">PROMOS</a>
+		</div>
+	</nav>
+    <main>
+        <nav class="ariane">
+            <a href="/home.html">Accueil</a>
+            <a href="/alcoolsvinschampagnes.html">Alcools</a>
+            <a href="/alcoolsvinsproduit1.html">Bordeaux Croix d'Ardet</a>
+        </nav>
         <div class="conteneur-produit">
-            <section class="produits">
-                <section class="vin-bg">
-                    <img id="bouteille" class="vin" src="" alt="croix d'ardet">
-                </section>
-            </section>
-<!-- information  -->
-            <section class="info">
-                <h1 class="titre"></h1>
-                <h2 class="description"></h2>
-                <h1 class="prix"></h1>
+            <div class="vin">
+                <img id="bouteille" src="" alt="croix d'ardet">
+            </div>
+            <div class="info">
+                <div class="titre"></div>
+                <p class="description"></p>
+                <div class="prix"></div>
                 <div id="input_div">
                     <img src="../assets/moins.png" class="moins" width="40">
-
                     <input type="text" size="1" value="0" class="count">
                     <img src="../assets/ajouter.png" value="+" class="plus" width="45">
                     <img src="../assets/champagne.png" class="panier" width="40">
                 </div>
-            </section>
+            </div>
         </div>
-        <!-- rectangle référence  -->
     </main>
     <footer class="footer">
         <a class="nous" href="aproposdenous.html">Qui sommes nous ?</a>

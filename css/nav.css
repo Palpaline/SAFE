@@ -1,0 +1,77 @@
+:root {
+	--black-transparent: rgba(0,0,0,.5);
+	--white-transparent: rgba(255,255,255,.9);
+
+	/* nav  */
+	--nav-border-radius: .5rem;
+	--nav-bg-color: var(--black-transparent);
+
+	/* titre */
+	--nav-link-color: var(--white-transparent);
+	--nav-link-color-hover: #222;
+	--nav-link-bg-color-hover: rgba(255,255,255,.8);
+
+	/* categorie  */
+	--nav-sublinks-bg-color: rgba(0,0,0,.75);
+
+	/* liens categories  */
+	--nav-sublink-color: var(--white-transparent);
+	--nav-sublink-bg-color-hover: var(--black-transparent);
+}
+
+.nav {
+	background-color: var(--nav-bg-color);
+	display: flex;
+    flex-basis: 100%;
+    overflow: auto none;
+    padding-left: 1rem;
+    z-index: 100;
+}
+.nav__category {
+	position: relative;
+}
+.nav__category__link {
+	color: var(--nav-link-color);
+	cursor: pointer;
+	display: inline-block;
+	font-weight: bold;
+	padding: .75rem 1rem;
+	transition: .3s ease all;
+    font-size: 0.875rem;
+    outline: none;
+    text-decoration: none;
+}
+.nav__category__link:hover,
+.nav__category__link:focus {
+    background-color: var(--black-transparent);
+}
+.nav__category:hover .nav__category__link {
+	background-color: var(--nav-link-bg-color-hover);
+	color: var(--nav-link-color-hover);
+}
+.nav__category__sublinks {
+	background-color: var(--nav-sublinks-bg-color);
+	border-bottom-left-radius: .5rem;
+	border-bottom-right-radius: 1.5rem;
+	display: none;
+	left: 0;
+	overflow: hidden;
+	position: absolute;
+	top: 100%;
+	width: 250px;
+}
+.nav__category__sublink {
+	background-color: transparent;
+	color: var(--nav-sublink-color);
+	cursor: pointer;
+	display: block;
+	padding: 1rem 2rem;
+	text-decoration: none;
+	transition: .3s ease background-color;
+}
+.nav__category__sublink:hover {
+	background-color: var(--nav-sublink-bg-color-hover);
+}
+.nav__category:hover .nav__category__sublinks {
+	display: block;
+}

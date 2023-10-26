@@ -1,4 +1,3 @@
-/* rectangle transparent  */
 section {
     width: 150px;
     height: 250px;
@@ -8,62 +7,24 @@ section {
     flex-direction: column;
     align-items: center;
     margin: 0 20px;
-
 }
 
-/* ombrage  */
-#bouteille {
-
-    filter: drop-shadow(5px 5px 4px rgba(0, 0, 0, 0.590));
-}
-
-/* text forme  */
-p {
-    color: black;
-    font-style: normal;
-    font-size: 13px;
-}
-
-/* texte police  */
-@font-face {
-    font-family: "OpenSans";
-    src: url(OpenSans-Light.ttf);
-}
-
-@font-face {
-    font-family: "Openbolder";
-    src: url(OpenSans-Bold.ttf);
-}
 
 .titre {
-    font-family: "OpenSans", sans-serif;
     font-size: 15px;
     font-weight: bolder;
     margin-top: 8px;
 }
 
 .paratitre {
-    font-family: "OpenSans", sans-serif;
-    font-size: 15px;
-    font-weight: bolder;
+    font-weight: bold;
 }
 
 .prix {
-    font-family: "Openbolder", sans-serif;
-    font-size: 15px;
-    font-weight: bolder;
+    font-weight: bold;
 }
 
-h1 {
-    font-family: "OpenSans", sans-serif;
-    font-size: 50px;
-    color: black;
-
-}
-
-/* image bouteille vin  */
-
-.vin-bg {
+.vin {
     background-image: url(../assets/vue-dessus-raisins-jaunes-bouteille-vin-noel-baies-rouges-ouvre-vin-noyer-tableau-noir.png);
     height: 132px;
     width: 132px;
@@ -73,8 +34,9 @@ h1 {
     justify-content: center;
     align-items: center;
 }
-
-/* bouton  */
+.vin #bouteille {
+    filter: drop-shadow(5px 5px 4px rgba(0, 0, 0, 0.590));
+}
 
 .count {
     background-color: none;
@@ -84,7 +46,6 @@ h1 {
     font-size: 15px;
     text-indent: 8px;
     border: px black;
-
     margin-left: 3px;
 }
 
@@ -93,7 +54,7 @@ h1 {
 .panier {
     padding: 2px;
     color: black;
-    font-size: x-large
+    font-size: x-large;
 }
 
 #input_div {
@@ -105,36 +66,6 @@ h1 {
 
 .Tri {
     margin-top: 70px;
-}
-
-.ariane {
-    height: 150px;
-    width: 100%;
-
-}
-
-/* fil d'ariane  */
-.ariane {
-    padding: 0 .5rem;
-}
-
-.ariane ul {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    margin: 0;
-    padding: 25px;
-}
-
-.ariane li:not(:last-child)::after {
-    display: inline-block;
-    margin: 0 .25rem;
-    content: ">";
-}
-
-#trait_dessus {
-    border-top: 1px solid #f1aa25;
-    width: 100%;
 }
 
 .tri {
@@ -156,11 +87,4 @@ div p {
 
 .card-wine {
     width: 13rem;
-}
-
-body {
-    background-image: url("../assets/concept-tourisme-vacances-man-drinking-wine-from-bottle-on-holiday-standing-against-yellow-ba\ \(1\).png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 0 10rem ;
 }
