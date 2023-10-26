@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>alcools, vins, champagnes - SAFE</title>
+    <title>Vins - SAFE</title>
     <link rel="stylesheet" href="../css/global.css">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/nav.css">
-    <link rel="stylesheet" href="../css/alcoolsvinschampagnes.css">
+    <link rel="stylesheet" href="../css/product.css">
 </head>
 <body class="productpage">
     <header>
@@ -19,18 +19,17 @@
             <span>Une soirée en toute sécurité</span>
         </div>
 		<div class="header-center">
-			<img src="../assets/ButtonHOME.png" alt="buttonHOME">
 			<img src="../assets/ButtonSEARCH.png" alt="buttonSEARCH">
 			<input type="search" name="search" id="search" placeholder="Je cherche un produit">
 		</div>
 		<div class="header-icons">
 			<a href="./panier.html" class="basket-icon"></a>
-			<a href="#" class="profile-icon"></a>
+			<a href="./connexion.html" class="profile-icon"></a>
 		</div>
     </header>
 	<nav class="header__nav nav">
 		<div class="nav__category">
-			<a class="nav__category__link" href="#">Alcools</a>
+			<a class="nav__category__link" href="./alcools.html">Alcools</a>
 			<ul class="nav__category__sublinks">
 				<li><a class="nav__category__sublink" href="#">Vins / champagnes</a></li>
 				<li><a class="nav__category__sublink" href="#">Bières / divers</a></li>
@@ -75,41 +74,35 @@
 	</nav>
     <main>
         <nav class="ariane">
-            <a href="/home.html">Accueil</a>
-            <a href="/alcoolsvinschampagnes.html">Alcools</a>
+            <a href="./index.html">Accueil</a>
+            <a href="./alcools.html">Alcools</a>
+            <a href="./product.html">Bordeaux Croix d'Ardet</a>
         </nav>
-        <h1>Vins / Champagnes</h1>
-        <select class="tri" aria-label="small tri">
-            <option selected="Trier par : ">Trier par :</option>
-            <option value="1">Prix: Ordre Croissant</option>
-            <option value="2">Prix: Ordre Décroissant</option>
-            <option value="3">En Stock</option>
-            <option value="4">Dernières arrivées</option>
-        </select>
-
-        <div class="les-vins"></div>
-        <!-- <section class="card-wine">
+        <div class="conteneur-produit">
             <div class="vin">
-                <img id="bouteille" src="../assets/La-Croix-DArdit-2019.png" alt="croix d'ardet" height="100" width="">
+                <img id="bouteille" src="" alt="croix d'ardet">
             </div>
-            <p class="titre">Bordeaux</p>
-            <p class="paratitre">Croix d'Ardet 75cl</p>
-            <p class="prix">12€90 TTC</p>
-            <div id="input_div">
-                <img src="../assets/moins.png" id="moins" onclick="minus()" width="25">
-                <input type="text" size="1" value="0" id="count">
-                <img src="../assets/ajouter.png" value="+" id="plus" onclick="plus()" width="30">
-                <img src="../assets/champagne.png" id="panier" onclick="panier()" width="25">
+            <div class="info">
+                <div class="titre"></div>
+                <p class="description"></p>
+                <div class="prix"></div>
+                <div id="input_div">
+                    <img src="../assets/moins.png" class="moins" width="40">
+                    <input type="text" size="1" value="0" class="count">
+                    <img src="../assets/ajouter.png" value="+" class="plus" width="45">
+                    <img src="../assets/champagne.png" class="panier" width="40">
+                </div>
             </div>
-        </section> -->
-
+        </div>
     </main>
-
     <footer class="footer">
         <a class="nous" href="aproposdenous.html">Qui sommes nous ?</a>
         <img class="buddies" src="../assets/Sanseazr_titre-1.png" alt="buddies buddies">
         <a class="contact" href="">Contact</a>
     </footer>
-    <script src="../scripts/alcoolsvinschampagnes.js"></script>
+
+    <script src="../scripts/product.js"></script>
 </body>
 </html>
+
+<!-- /pages/product.html?titre=Bordeaux&titre2=Croix&20d%27Ardet&2075cl -->

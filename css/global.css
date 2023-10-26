@@ -34,15 +34,28 @@ body.productpage {
 
 main {
     margin: 0 auto;
-    padding-top: 2rem;
+    padding: 2rem;
+}
+.home main {
+    padding: 2rem 0 0;
 }
 
 a {
     color: #000;
     text-decoration: none;
 }
+
 button {
+    background-color: #FF9B70;
+    color: black;
     cursor: pointer;
+    display: block;
+    border: none;
+    padding: .875rem 1rem;
+    border-radius: .5rem;
+    font-weight: bold;
+    font-size: 1rem;
+    box-shadow: 0 .25rem .25rem rgba(0,0,0,.4);
 }
 
 .footer {
@@ -75,7 +88,6 @@ main {
     text-align: left;
     width: 100%;
 }
-
 h1 {
     border-bottom: 1px solid #000;
     margin: 1rem 0 2rem;
@@ -83,6 +95,7 @@ h1 {
 }
 .gradient-block {
     background: linear-gradient(180deg, #B4ACC3 0%, transparent);
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, .3);
     border-radius: 2rem;
     padding: 1rem;
 }
@@ -115,6 +128,7 @@ h1 {
 .product__quantity__less,
 .product__quantity__more {
     border: none;
+    box-shadow: initial;
     align-items: center;
     border-radius: 50%;
     cursor: pointer;

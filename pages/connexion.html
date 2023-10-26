@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SAFE - Smart And Fun Evenings</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/nav.css">
     <link rel="stylesheet" href="../css/connexion.css">
-    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 </head>
-<body>
+
+<body class="login-page">
     <header>
         <div class="header-left">
             <a class="logo" href="index.html">
@@ -17,104 +20,84 @@
             <span>Une soirée en toute sécurité</span>
         </div>
 		<div class="header-center">
-			<img src="../assets/ButtonHOME.png" alt="buttonHOME">
 			<img src="../assets/ButtonSEARCH.png" alt="buttonSEARCH">
 			<input type="search" name="search" id="search" placeholder="Je cherche un produit">
 		</div>
 		<div class="header-icons">
 			<a href="./panier.html" class="basket-icon"></a>
-			<a href="#" class="profile-icon"></a>
+			<a href="./connexion.html" class="profile-icon"></a>
 		</div>
     </header>
-    <section class="container forms">
-        <div class="form login">
-            <div class="form-content">
-                <header>Login</header>
-                <form action="#">
-                    <div class="field input-field">
-                        <input type="email" placeholder="Email" class="input">
-                    </div>
-
-                    <div class="field input-field">
-                        <input type="password" placeholder="Password" class="password">
-                        <i class='bx bx-hide eye-icon'></i>
-                    </div>
-
-                    <div class="form-link">
-                        <a href="#" class="forgot-pass">Forgot password?</a>
-                    </div>
-
-                    <div class="field button-field">
-                        <button>Login</button>
-                    </div>
-                </form>
-
-                <div class="form-link">
-                    <span>Don't have an account? <a href="#" class="link signup-link">Signup</a></span>
-                </div>
-            </div>
-
-            <div class="line"></div>
-
-            <div class="media-options">
-                <a href="#" class="field facebook">
-                    <i class='bx bxl-facebook facebook-icon'></i>
-                    <span>Login with Facebook</span>
-                </a>
-            </div>
-            <div class="media-options">
-                <a href="#" class="field google">
-                    <img src="#" alt="" class="google-img">
-                    <span>Login with Google</span>
-                </a>
-            </div>
-        </div>
-        <div class="form signup">
-            <div class="form-content">
-                <header>Signup</header>
-                <form action="#">
-                    <div class="field input-field">
-                        <input type="email" placeholder="Email" class="input">
-                    </div>
-
-                    <div class="field input-field">
-                        <input type="password" placeholder="Create password" class="password">
-                    </div>
-
-                    <div class="field input-field">
-                        <input type="password" placeholder="Confirm password" class="password">
-                        <i class='bx bx-hide eye-icon'></i>
-                    </div>
-
-                    <div class="field button-field">
-                        <button>Signup</button>
-                    </div>
-                </form>
-
-                <div class="form-link">
-                    <span>Already have an account? <a href="#" class="link login-link">Login</a></span>
-                </div>
-            </div>
-
-            <div class="line"></div>
-
-            <div class="media-options">
-                <a href="#" class="field facebook">
-                    <i class='bx bxl-facebook facebook-icon'></i>
-                    <span>Login with Facebook</span>
-                </a>
-            </div>
-
-            <div class="media-options">
-                <a href="#" class="field google">
-                    <img src="#" alt="" class="google-img">
-                    <span>Login with Google</span>
-                </a>
-            </div>
-
-        </div>
-    </section>
-
-    <script src="../script.js"></script>
+	<nav class="header__nav nav">
+		<div class="nav__category">
+			<a class="nav__category__link" href="./alcools.html">Alcools</a>
+			<ul class="nav__category__sublinks">
+				<li><a class="nav__category__sublink" href="#">Vins / champagnes</a></li>
+				<li><a class="nav__category__sublink" href="#">Bières / divers</a></li>
+				<li><a class="nav__category__sublink" href="#">Spiritueux</a></li>
+			</ul>
+		</div>
+		<div class="nav__category">
+			<a class="nav__category__link" href="#">Softs</a>
+			<ul class="nav__category__sublinks">
+				<li><a class="nav__category__sublink" href="#">Sodas</a></li>
+				<li><a class="nav__category__sublink" href="#">Jus de fruits</a></li>
+				<li><a class="nav__category__sublink" href="#">Eaux</a></li>
+			</ul>
+		</div>
+		<div class="nav__category">
+			<a class="nav__category__link" href="#">Snack</a>
+			<ul class="nav__category__sublinks">
+				<li><a class="nav__category__sublink" href="#">Sucré</a></li>
+				<li><a class="nav__category__sublink" href="#">Salé</a></li>
+			</ul>
+		</div>
+		<div class="nav__category">
+			<a class="nav__category__link" href="#">Remèdes</a>
+			<ul class="nav__category__sublinks">
+				<li><a class="nav__category__sublink" href="#">Lendemains difficiles</a></li>
+				<li><a class="nav__category__sublink" href="#">Conseils de grand-mère</a></li>
+			</ul>
+		</div>
+		<div class="nav__category">
+			<a class="nav__category__link" href="#">Location matelas</a>
+			<ul class="nav__category__sublinks">
+				<li><a class="nav__category__sublink" href="#">Une place</a></li>
+				<li><a class="nav__category__sublink" href="#">Deux places</a></li>
+			</ul>
+		</div>
+		<div class="nav__category">
+			<a class="nav__category__link" href="#">PACKS</a>
+		</div>
+		<div class="nav__category">
+			<a class="nav__category__link" href="#">PROMOS</a>
+		</div>
+	</nav>
+	<main>
+		<h1>Identifiez-vous</h1>
+		<div class="login-page-content">
+			<div class="gradient-block">
+				<h2 class="signin-title">Créez votre compte </h2>
+				<div class="signin-text">Saisissez votre adresse e-mail pour créer votre compte</div>        
+				<label for="signin-email">Adresse e-mail</label>
+				<input type="email" name="sigin-email" id="sigin-email"><br>
+				<button>Créez votre compte</button>
+			</div>
+			<div class="gradient-block">
+				<h2 class="login-title">Déjà Inscrit?</h2>
+				<label for="login-email">Adresse e-mail</label>
+				<input type="email" name="login-email" id="login-email">
+				<label for="login-password">Mot de passe</label>
+				<input type="password" name="login-password" id="login-password">
+				<a href="#" class="lost-password-link">Mot de passe oublié?</a>
+				<button>Connexion</button>
+			</div>
+		</div>
+    </main>
+    <footer class="footer">
+        <a class="nous" href="aproposdenous.html">Qui sommes nous ?</a>
+        <img class="buddies" src="../assets/Sanseazr_titre-1.png" alt="buddies buddies">
+        <a class="contact" href="">Contact</a>
+    </footer>
 </body>
 </html>

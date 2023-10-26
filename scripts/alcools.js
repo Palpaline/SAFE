@@ -80,7 +80,7 @@ vins.map((vin, index) => {
     const cardWine = document.createElement("section");
     cardWine.classList.add("card-wine");
     cardWine.innerHTML = `
-        <a href="alcoolsvinsproduit1.html?titre=${vin.titre}&titre2=${vin.titre2}">
+        <a href="product.html?titre=${vin.titre}&titre2=${vin.titre2}">
             <div class="vin">
                 <img id="bouteille" src=${vin.image} alt="croix d'ardet" height="100" width="">
             </div>
@@ -96,7 +96,6 @@ vins.map((vin, index) => {
         </div>`;
 
     lesVins.appendChild(cardWine);
-    console.log(index);
     var count = 0;
     var countEl = document.getElementsByClassName("count");
     var moinsEl = document.getElementsByClassName("moins");
@@ -107,27 +106,20 @@ vins.map((vin, index) => {
     moinsEl[index].addEventListener("click", minus);
     plusEl[index].addEventListener("click", plus);
     panierEl[index].addEventListener("click", panier);
-
-    function plus() {
-        count++;
-        countEl[index].value = count;
-    }
-    function minus() {
-        if (count > 0) {
-            count--;
-            countEl[index].value = count;
-        }
-    }
-    function panier() {
-        alert(count + "x " + vin.titre + " " + vin.titre2 + " ajouté(s) au panier");
-        count = 0;
-        countEl[index].value = count;
-    }
-
 })
 
-
-
-
-
-
+function plus() {
+    count++;
+    countEl[index].value = count;
+}
+function minus() {
+    if (count > 0) {
+        count--;
+        countEl[index].value = count;
+    }
+}
+function panier() {
+    alert(count + "x " + vin.titre + " " + vin.titre2 + " ajouté(s) au panier");
+    count = 0;
+    countEl[index].value = count;
+}

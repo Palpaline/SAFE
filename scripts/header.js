@@ -86,7 +86,7 @@ searchBtn.addEventListener("click", (e) => {
         results.map(item => {
             searchList.style.display = "block";
             const a =  document.createElement("a");
-            a.href=`alcoolsvinsproduit1.html?titre=${item.titre}&titre2=${item.titre2}`;
+            a.href=`product.html?titre=${item.titre}&titre2=${item.titre2}`;
             const li = document.createElement("li");
             li.textContent = `${item.titre} ${item.titre2}`
             a.appendChild(li);

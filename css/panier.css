@@ -10,12 +10,19 @@
 
 .cart-content {
     flex-basis: 75%;
+    border-radius: 2rem;
+    border: 4px;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, .3);
+    
 }
 .cart-aside {
     flex-direction: column;
     flex-basis: 25%;
     display: flex;
     gap: 2rem;
+    /* border-radius: 2rem;
+    border: 4px;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, .3); */
 }
 
 .cart-item {
@@ -40,21 +47,8 @@
 
 .cart-item__delete {
     background-color: none;
-    border: 1px solid black;
-    width: 2rem;
-    height: 2rem;
-}
-
-.cart-aside button {
-    background-color: #FF9B70;
-    color: black;
-    display: block;
-    border: none;
-    padding: .875rem 1rem;
-    border-radius: .5rem;
-    font-weight: bold;
-    font-size: 1rem;
-    box-shadow: 0 .25rem .25rem rgba(0,0,0,.4);
+    /* width: 2rem; */
+    /* height: 2rem; */
 }
 
 .cart-recap hr {
